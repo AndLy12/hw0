@@ -4,6 +4,7 @@ import (
     "bufio"
     "log"
     "net"
+    "strings"
 )
 
 func main() {
@@ -17,7 +18,7 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-    if response != "OK\n" {
+    if strings.TrimSpace(response) != "OK\n" {
         log.Fatal("response != OK\n" + response)
     }
 }
