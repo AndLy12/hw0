@@ -27,6 +27,6 @@ func main() {
 }
 
 func handleRequest(conn net.Conn) {
-    defer conn.Close()
     conn.Write([]byte("OK\n"))
+    conn.Close()
 }
