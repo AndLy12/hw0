@@ -26,3 +26,5 @@ env/
 .coverage
 .tox/
 htmlcov/
+
+*:Zone.Identifier
